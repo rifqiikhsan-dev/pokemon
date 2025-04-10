@@ -6,7 +6,7 @@ const Navbar = ({ navFor, setKeyword }) => {
     return (
         <div className="flex flex-col">
             <div className="flex flex-row justify-between items-center py-[6px] px-5 md:px-10 relative">
-                <img src="/public/assets/images/logo.png" alt="Logo" className="h-[35px]" />
+                <img src="/public/assets/logo.png" alt="Logo" className="h-[35px]" />
 
                 {navFor !== "detail" && (
                     <div className="flex items-center gap-2">
@@ -19,7 +19,7 @@ const Navbar = ({ navFor, setKeyword }) => {
                             />
                         )}
                         <img
-                            src="/public/assets/images/search.png"
+                            src="/public/assets/search.png"
                             alt="Search"
                             className="h-[20px] cursor-pointer"
                             onClick={() => setShowSearch((prev) => !prev)}
